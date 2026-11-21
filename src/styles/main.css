@@ -1,0 +1,36 @@
+:root {
+    --color-primary: #7b1e1e;
+    --color-primary-dark: #5a1515;
+    --color-primary-light: #9d2d2d;
+    --color-secondary: #c49a2a;
+    --color-secondary-dark: #a67c1f;
+    --color-secondary-light: #e8c56d;
+
+    --color-cream: #faf6ef;
+    --color-cream-dark: #f0ebe0;
+    --color-white: #ffffff;
+    --color-black: #1a1a1a;
+    --color-dark: #2d2d2d;
+
+    --color-gray-100: #f5f5f5;
+    --color-gray-200: #e5e5e5;
+    --color-gray-300: #d4d4d4;
+    --color-gray-400: #a3a3a3;
+    --color-gray-500: #737373;
+    --color-gray-600: #525252;
+    --color-gray-700: #404040;
+    --color-gray-800: #262626;
+    --color-gray-900: #171717;
+
+    --color-text: var(var(--color-dark));
+    --color-text-ligth: var(var(--color-gray-600));
+    --color-text-inverse: var(var(--color-white));
+    --color-background: var(var(--color-white));
+    --color-background-alt: var(var(--color-cream));
+    --color-background-dark: var(var(--color-dark));
+    --color-border:var(--color-gray-200);
+    --color-border-dark: var(var(--color-gray-300));
+    --color-focus: var(var(--color-secondary));
+    --color-error: #c0392b;
+    --color-sucess: #27ae60;
+}

@@ -1,0 +1,38 @@
+.about {
+    position: relative;
+    padding: var(--space-20) 0;
+    overflow: hidden;
+}
+
+.about__background {
+    position: relative;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.about__bg-gradiente {
+    position: absolute;
+    inset: 0;
+    background: 
+        radial-gradient(ellipse 60% 50% at 10% 10%,
+        rgb(123 30 30 / 0.2) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 40% at 90% 90%,
+        rgb(196 154 42 / 0.08) 0%, transparent 50%),
+        var(--color-dark);
+}
+
+.about__decor {
+    position: absolute;
+    border-radius: 50%;
+    fill: blue(100px);
+    opacity: 0.3;
+    animation: floatSlow 25s ease-in-out infinite;
+}
+
+.about__decor--1 {
+    width: 500px;
+    height: 500px;
+    background: var(--color-primary);
+    top: -150px;
+}
