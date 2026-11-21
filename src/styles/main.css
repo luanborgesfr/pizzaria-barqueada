@@ -22,15 +22,15 @@
     --color-gray-800: #262626;
     --color-gray-900: #171717;
 
-    --color-text: var(var(--color-dark));
-    --color-text-ligth: var(var(--color-gray-600));
-    --color-text-inverse: var(var(--color-white));
-    --color-background: var(var(--color-white));
-    --color-background-alt: var(var(--color-cream));
-    --color-background-dark: var(var(--color-dark));
+    --color-text: (var(--color-dark));
+    --color-text-ligth: (var(--color-gray-600));
+    --color-text-inverse: (var(--color-white));
+    --color-background: (var(--color-white));
+    --color-background-alt: (var(--color-cream));
+    --color-background-dark: (var(--color-dark));
     --color-border:var(--color-gray-200);
-    --color-border-dark: var(var(--color-gray-300));
-    --color-focus: var(var(--color-secondary));
+    --color-border-dark: (var(--color-gray-300));
+    --color-focus: (var(--color-secondary));
     --color-error: #c0392b;
     --color-sucess: #27ae60;
 
@@ -66,4 +66,7 @@
     --space-20: 5rem;
     --space-24: 6rem;
     --space-32: 8rem;
+
+    --container-max: 1200px
+    --container-padding: (var(--space-6))
 }
