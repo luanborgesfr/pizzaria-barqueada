@@ -1,0 +1,79 @@
+:root {
+    --color-primary: #7b1e1e;
+    --color-primary-dark: #5a1515;
+    --color-primary-light: #9d2d2d;
+    --color-secondary: #c49a2a;
+    --color-secondary-dark: #a67c1f;
+    --color-secondary-light: #e8c56d;
+
+    --color-cream: #faf6ef;
+    --color-cream-dark: #f0ebe0;
+    --color-white: #ffffff;
+    --color-black: #1a1a1a;
+    --color-dark: #2d2d2d;
+
+    --color-gray-100: #f5f5f5;
+    --color-gray-200: #e5e5e5;
+    --color-gray-300: #d4d4d4;
+    --color-gray-400: #a3a3a3;
+    --color-gray-500: #737373;
+    --color-gray-600: #525252;
+    --color-gray-700: #404040;
+    --color-gray-800: #262626;
+    --color-gray-900: #171717;
+
+    --color-text: (var(--color-dark));
+    --color-text-ligth: (var(--color-gray-600));
+    --color-text-inverse: (var(--color-white));
+    --color-background: (var(--color-white));
+    --color-background-alt: (var(--color-cream));
+    --color-background-dark: (var(--color-dark));
+    --color-border:var(--color-gray-200);
+    --color-border-dark: (var(--color-gray-300));
+    --color-focus: (var(--color-secondary));
+    --color-error: #c0392b;
+    --color-sucess: #27ae60;
+
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 2rem;
+    --text-4xl: 2.5rem;
+    --text-5xl: 3.5rem;
+    --text-6xl: 4.5rem;
+
+    --leading-tight: 1.1;
+    --leading-snug: 1.375;
+    --leading-normal: 1.5;
+    --leading-relaxed: 1.625;
+
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-10: 2.5rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    --space-20: 5rem;
+    --space-24: 6rem;
+    --space-32: 8rem;
+
+    --container-max: 1200px
+    --container-padding: (var(--space-6))
+
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-2xl: 24px;
+    --radius-full: 9999px;
+}
