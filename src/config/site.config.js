@@ -71,3 +71,13 @@ export const siteConfig = {
         },
     ],
 }
+
+//mensagens pre-defibidas para whatsapp
+export const whatsappMessages = {
+    general: 'Olá! Gostaria de fazer um pedido na Barqueada Pizzaria.',
+    reservation: 'Olá! Gostariaa de fazer uma reserva na Barqueada Pizzaria.',
+    menu: 'Olá! Gostaria de saber mais sobre o cardápio da Barqueada Pizzaria.',
+    contact: 'Olá! Gostaria de entrar em contato com a Barqueada Pizzaria.'
+}
+
+export default siteConfig
