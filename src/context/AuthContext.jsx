@@ -19,7 +19,7 @@ export function AuthProvider({ children }) {
     const [user, setUser] = useState(null)
     const [loading, setLoading] = useState(null)
     const [error, setError] = useState(null)
-}
+
     useEffect(() => {
         initializeMockData()
         const savedUser = localStorage.getItem
@@ -137,3 +137,98 @@ export function AuthProvider({ children }) {
 
         return { sucess: true, user: updateUser }
     }, [user])
+
+    //adicionar ordenamento no histórico do usuario
+    const addOrder = useCallback((orderData) => {
+        if (!user) return { sucess: false, error: 'Lot logged in' }
+
+        const formattedPhone = formatPhoneForStorage(user.phone)
+        const orders = JSON.parse(localStorage.getItem(USER_ORDERS_KEY))
+        const users = JSON.parse(localStorage.getItem(MOCK_USERS_KEY) || '{}')
+
+        const order = {
+            id: `order_${Date.now()}`,
+            ...orderData,
+            createdAt: new Date().toISOString(),
+            status: orderData.status || 'pending',
+        }
+
+        if (!orders[formattedPhone]) {
+            orders[formattedPhone] = []
+        }
+        orders[formattedPhone].unshift(order)
+        localStorage.setItem(USER_ORDERS_KEY, JSON.stringify(orders))
+
+        //atualizar estatísticas dos usuários
+        if (users[formattedPhone]) {
+            users[formattedPhone].TotalOrders = (users[formattedPhone].TotalOrders || 0) + 1
+            users[formattedPhone].TotalSpent = (users[formattedPhone].TotalSpent || 0) + orderData.total
+            users[formattedPhone].loyaltyPoints = (users[formattedPhone].loyaltyPoints || 0) + orderData.loyaltyPoints
+            localStorage.setItem(MOCK_USERS_KEY, JSON.stringify(users))
+            localStorage.setItem(CURRENT_USER_KEY, JSON.stringify(users[formattedPhone]))
+            setUser(users[formattedPhone])
+        }
+
+        return { sucess: true, order }
+    }, [user])
+
+    //pegar pedidos dos usuarios
+    const getOrders = useCallback(() => {
+        if (!user) return []
+
+        const formattedPhone = formatPhoneForStorage(user.phone)
+        const orders = JSON.parse(localStorage.getItem(USER_ORDERS_KEY) || '{}')
+        return orders[formattedPhone] || []
+    }, [user])
+
+    //receber pontos loaylty
+    const redeemPoints = useCallback((points, productName) => {
+        if (!user) return { sucess: false, error: 'Log logged in' }
+        if ((user.loyaltyPoints || 0) < points ) {
+            return { sucess: false, error: 'Pontos insuficientes' }
+        }
+
+        const formattedPhone = formatPhoneForStorage(user.phone)
+        const users = JSON.parse(localStorage.getItem(MOCK_USERS_KEY) || '{}')
+
+        if (users[formattedPhone]) {
+            users[formattedPhone].loyaltyPoints -= points
+            localStorage.setItem(MOCK_USERS_KEY, JSON.stringify(users))
+            localStorage.setItem(CURRENT_USER_KEY, JSON.stringify(users[formattedPhone]))
+            setUser(users[formattedPhone])
+        }
+
+        return { sucess:true }
+    }, [user])
+
+    return (
+        <AuthContext.Provider value={{
+            user,
+            loading,
+            error,
+            register,
+            login,
+            logout,
+            updateProfile,
+            addOrder,
+            getOrders,
+            addOrder,
+            getOrders,
+            redeemPoints,
+            formatPhoneForDisplay,
+            clearError: () => setError(null),
+        }}>
+            {children}
+            </AuthContext.Provider>
+    )
+}
+
+export function useAuth() {
+    const context = useContext(AuthContext)
+    if (!context) {
+        throw new Error('useAuth must be used within an AuthProvider')
+    }
+    return context
+}
+
+export default AuthContext
