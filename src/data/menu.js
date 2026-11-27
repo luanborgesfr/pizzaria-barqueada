@@ -312,3 +312,34 @@ export const pizzaImages = {
   'banoffee-pequena': '/images/pizzas/imgPizzaDoce20cm.jpeg',
   'ovomaltine-pequena': '/images/pizzas/imgPizzaDoce20cm.jpeg',
 }
+
+//calzones
+
+export const calzones = [
+    {
+        id: 'calzone-calabresa',
+        name: 'Calzone Calabresa - 1un',
+        description: '',
+        price: 23.00,
+        category: 'calzone',
+        popular: false,
+        image: '/images/produtos/imgCalzone.jpeg',
+    },
+    {
+        id: 'calzone-marguerita',
+        name: 'Calzone Marguerita - 1un',
+        description: '',
+        price: 23.00,
+        popular: false,
+        image: '/images/produtos/imgCalzone.jpeg',
+    },
+    {
+        id: 'calzone-file',
+        name: 'Calzone Filé - 1un',
+        description: '',
+        price: 28.00,
+        category: 'calzone',
+        popular: false,
+        image: '/images/produtos/imgCalzone.jpeg',
+    },
+]
