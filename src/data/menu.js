@@ -227,3 +227,42 @@ export const pizzas20cm = {
         },
     ],
 }
+
+//adicionais
+
+export const adicionais = {
+    salgados: {
+        title: 'Adicionar salgados',
+        description: 'Escolha até 1 opção',
+        maxSelection: 1,
+        options: [
+            {id: 'oregano', name: 'Orégano', price: 0},
+            { id: 'cebola', name: 'Cebola', price: 0 },
+            { id: 'alho-frito', name: 'Alho Frito', price: 3.00 },
+            { id: 'milho', name: 'Milho', price: 2.00 },
+            { id: 'catupiry', name: 'Catupiry', price: 10.00 },
+            { id: 'cream-cheese', name: 'Cream Cheese', price: 12.00 },
+        ],
+    },
+    bordaRecheada: {
+        title: 'Borda Recheada',
+        description: 'Escolha até 1 opção',
+        maxSelection: 1,
+        options: [
+            { id: 'borda-catupiry', name: 'Borda Recheada - Catupiry', price: 15.00 },
+            { id: 'borda-ovomaltine', name: 'Borda Recheada - Ovomaltine', price: 15.00 },
+            { id: 'borda-doce-leite', name: 'Borda Recheada - Doce de Leite', price: 15.00 },
+            { id: 'borda-nutella', name: 'Borda Recheada - Nutella', price: 18.00 },
+        ],
+    },
+    sache: {
+        title: 'Sachê',
+        description: 'Escolha até 1 opção',
+        maxSelection: 1,
+        required: true,
+        options: [
+            { id: 'sache-sim', name: 'Sim, vou querer o sachê de ketchup e maionese!', price: 0 },
+            { id: 'sache-nao', name: 'Não, não vou querer sachês!', price: 0 },
+        ],
+    },
+}
