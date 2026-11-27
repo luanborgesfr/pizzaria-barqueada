@@ -1,7 +1,6 @@
 //cardapio barqueada pizzaria
 
-import { populate } from "dotenv";
-
+//pizzas salgadas e doces (8 fatias)
 export const pizzas35cm = {
     title: 'Pizzas Salgadas e Doces',
     description: 'Tamanho 35cm - oito fatias (Salgadas e Doces)',
@@ -172,6 +171,57 @@ export const pizzas35cm = {
             name: 'Ovomaltine',
             description: '',
             price: 14.00,
+            category: 'doce',
+            popular: false,
+        },
+    ],
+}
+
+//pizzad doces pequenas (4 fatias)
+
+export const pizzas20cm = {
+    title: 'Pizzas Doces Pequenas',
+    description: 'Tamanho 20cm - 4 fatias (somente doces)',
+    details: 'Escolha um sabor por pizza',
+    basePrice: 30.00,
+    flavors: [
+        {
+            id: 'cupuacu-queijo-cuia-pequena',
+            name: 'Cupuaçu com Queijo Cuia',
+            description: 'Creme de Leite, Muçarela, Doce de Cupuaçu e Queijo Cuia Maçaricado',
+            price: 10.00,
+            category: 'doce',
+            popular: false,
+        },
+        {
+            id: 'ganache-chocolate-mnm-pequena',
+            name: 'Ganache de Chocolate e M&M',
+            description: 'Creme de Leite, Ganache de Chocolate e M&M',
+            price: 14.00,
+            category: 'doce',
+            popular: false,
+        },
+        {
+            id: 'nutella-morango-pequena',
+            name: 'Nutella com Morago',
+            description: 'Creme de Leite, Nutella e Morango',
+            price: 15.00,
+            category: 'doce',
+            popular: false,
+        },
+        {
+            id: 'banoffee-pequena',
+            name: 'Banoffe',
+            description: 'Creme de Leite, Banana, Doce de Leite e Canela',
+            price: 0,
+            category: 'doce',
+            popular: false,
+        },
+        {
+            id: 'ovomaltine-pequena',
+            name: 'Ovomaltine',
+            description: '',
+            price: 3.00,
             category: 'doce',
             popular: false,
         },
