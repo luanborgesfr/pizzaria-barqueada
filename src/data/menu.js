@@ -266,3 +266,49 @@ export const adicionais = {
         ],
     },
 }
+
+//stick - grissini
+
+export const sticks = [
+    {
+        id: 'stick-grissini',
+        name: 'Stick (Grissini)',
+        description: 'Coberto com Leite e Canela, acompanha Ovomaltine e Cream Cheese',
+        price: 27.00,
+        category: 'entrada',
+        popular: false,
+    },
+]
+
+//img de referências das pizzas
+
+export const pizzaImages = {
+  'pizza-35cm': '/images/pizzas/imgPizzaDoceSalgado35cm.jpeg',
+  'pizza-20cm': '/images/pizzas/imgPizzaDoce20cm.jpeg',
+  'mussarela': '/images/pizzas/imgMussarela.jpeg',
+  'marguerita': '/images/pizzas/imgMarguerita.jpeg',
+  'quatro-queijos': '/images/pizzas/imgQuatroQueijos.jpeg',
+  'calabresa': '/images/pizzas/imgCalabresa.jpeg',
+  'calabresa-catupiry': '/images/pizzas/imgCalabresa-c-Catupiry.jpg',
+  'portuguesa': '/images/pizzas/imgPortuguesa.jpeg',
+  'bacon-catupiry': '/images/pizzas/imgBacon-c-Catupiry.jpeg',
+  'tres-porquinhos': '/images/pizzas/imgTresPorquinhos.jpeg',
+  'lombo-canadense': '/images/pizzas/imgLomboCanadense.jpeg',
+  'frango-catupiry': '/images/pizzas/imgFrango-c-atupiry.jpeg',
+  'carne-seca-banana': '/images/pizzas/imgCarneSeca-c-Banana.jpeg',
+  'camarao-tucupi-jambu': '/images/pizzas/imgCamarãoc-TucupiJambu.jpeg',
+  'camarao-pesto-jambu': '/images/pizzas/imgCamarão-c-PestoJambu.jpeg',
+  'file-pesto-jambu': '/images/pizzas/imgFilé-c-PestoJambu.jpeg',
+  'pepperoni-cream-cheese': '/images/pizzas/imgPepperoni-c-CreamCheese.jpeg',
+  'pepperoni-cream-cheese-alho': '/images/pizzas/imgPepperoni-c-CreamCheeseAlhoFrito.jpeg',
+  'cupuacu-queijo-cuia': '/images/pizzas/imgCupuaçu-c-QueijoCuia.jpeg',
+  'ganache-chocolate-mnm': '/images/pizzas/imgGanacheChocolateMM.jpeg',
+  'nutella-morango': '/images/pizzas/imgNutella-c-Morango.jpeg',
+  'banoffee': '/images/pizzas/imgBanoffee.jpeg',
+  'ovomaltine': '/images/pizzas/imgOvomaltine.jpg',
+  'cupuacu-queijo-cuia-pequena': '/images/pizzas/imgPizzaDoce20cm.jpeg',
+  'ganache-chocolate-mnm-pequena': '/images/pizzas/imgPizzaDoce20cm.jpeg',
+  'nutella-morango-pequena': '/images/pizzas/imgPizzaDoce20cm.jpeg',
+  'banoffee-pequena': '/images/pizzas/imgPizzaDoce20cm.jpeg',
+  'ovomaltine-pequena': '/images/pizzas/imgPizzaDoce20cm.jpeg',
+}
