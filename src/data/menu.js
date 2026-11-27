@@ -130,5 +130,50 @@ export const pizzas35cm = {
             category: 'salgada',
             popular: false,
         },
-    ]
+
+        //pizzas doces
+
+        {
+            id: 'cupuacu-queijo-cuia',
+            name: 'Cupuaçu com Queijo Cuia',
+            description: 'Creme de Leite, Muçarela, Doce de Cupuaçu e Queijo Cuia Maçaricado',
+            price: 34.00,
+            category: 'doce',
+            popular: false,
+        },
+        {
+            id: 'ganache-chocolate-mnm',
+            name: 'Ganache de Chocolate e M&M',
+            description: 'Creme de Leite, Ganache de Chocolate e M&M',
+            price: 39.00,
+            category: 'doce',
+            popular: false,
+        },
+        {
+            id: 'nutella-morango',
+            name: 'Nuella com Morango',
+            description: 'Creme de Leite, Nutella e Morango',
+            price: 42.00,
+            category: 'doce',
+            popular: false
+        },
+        {
+            id: 'banoffe',
+            name: 'Banoffe',
+            description: 'Creme de Leite, Banana, Doce de Leite e Canela',
+            price: 4.00,
+            originalPrice: 55.00,
+            discount: 11,
+            category: 'doce',
+            popular: false,
+        },
+        {
+            id: 'ovomaltine',
+            name: 'Ovomaltine',
+            description: '',
+            price: 14.00,
+            category: 'doce',
+            popular: false,
+        },
+    ],
 }
