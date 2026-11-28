@@ -343,3 +343,106 @@ export const calzones = [
         image: '/images/produtos/imgCalzone.jpeg',
     },
 ]
+
+//lasanha
+
+export const lasanha = [
+    {
+        id: 'lasanha-carne',
+        name: 'Lasanha de carne',
+        description: '',
+        price: 0,
+        category: 'lasanha',
+        popular: false,
+        soldOut: true,
+        image: '/images/produtos/imgLasanhaCarne.jpeg',
+    },
+]
+
+//bebidas
+
+export const bebidas = [
+    //milkshake
+    {
+        id: 'milkshake-ovomaltine',
+        name: 'Milk-shake - Ovomaltine',
+        description: '',
+        price: 23.00,
+        category: 'milkshake',
+        popular: false,
+        loyaltyPoints: 0,
+        image: '/images/bebidas/imgMilkShakeOvomaltine.jpeg',
+    },
+    {
+        id: 'milkshake-frutas-vermelhas',
+        name: 'Milk-shake - Frutas Vermelhas',
+        description: '',
+        price: 23.00,
+        category: 'milkshake',
+        popular: false,
+        loyaltyPoints: 0,
+        image: '/images/bebidas/imgMilkShakeFrutasVermelhas.jpeg',
+    },
+    //sucos
+    {
+        id: 'suco-cupuacu',
+        name: 'Suco 300ml - Cupuaçu',
+        description: '',
+        price: 8.00,
+        category: 'suco',
+        popular: false,
+        loyaltyPoints: 120,
+        soldOut: true,
+        image: '/images/bebidas/imgCupuacu-300ml.jpeg',
+    },
+    {
+        id: 'suco-maracuja',
+        name: 'Suco 300ml - Maracujá',
+        description: '',
+        price: 8.00,
+        category: 'suco',
+        popular: false,
+        loyaltyPoints: 120,
+        image: '/images/bebidas/imgCupuacuPitaya-300ml.jpeg',
+    },
+    {
+        id: 'suco-tapereba',
+        name: 'Suco 300ml - Taperebá',
+        description: '',
+        price: 8.00,
+        category: 'suco',
+        popular: false,
+        loyaltyPoints: 120,
+        image: '/images/bebidas/imgTapereba-300ml.jpeg',
+    },
+    {
+        id: 'suco-cupuacu-pitaya',
+        name: 'Suco 300ml - Cupuaçu com Pitaya',
+        description: '',
+        price: 8.00,
+        category: 'suco',
+        popular: false,
+        loyaltyPoints: 120,
+        image: '/images/bebidas/imgCupuacuPitaya-300ml.jpeg',
+    },
+    {
+        id: 'suco-caju',
+        name: 'Suco 300ml - Caju',
+        description: '',
+        price: 8.00,
+        category: 'suco',
+        popular: false,
+        loyaltyPoints: 0,
+        image: '/images/bebidas/imgCaju-300ml.jpeg',
+    },
+    {
+        id: 'suco-manga-maracuja',
+        name: 'Suco 300ml - Manga com Maracujá',
+        description: '',
+        price: 8.00,
+        category: 'suco',
+        popular: false,
+        loyaltyPoints: 0,
+        image: '/images/bebidas/imgMangaMaracuja-300ml.jpeg',
+    },
+]
